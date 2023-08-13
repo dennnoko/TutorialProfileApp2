@@ -48,14 +48,13 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    MainScreen()
                 }
             }
         }
     }
 }
 
-@Preview
 @Composable
 fun MainScreen() {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -124,6 +123,14 @@ fun MainScreen() {
         if(dScreen == true) {
             DetailScreen()
         }
+    }
+}
+
+@Preview
+@Composable
+fun PreviewMainScreen(){
+    Surface {
+        MainScreen()
     }
 }
 
