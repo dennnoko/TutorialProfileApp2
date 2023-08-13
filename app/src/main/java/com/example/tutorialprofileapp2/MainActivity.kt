@@ -120,9 +120,9 @@ fun MainScreen() {
             )
         }
 
-        if(dScreen == true) {
-            DetailScreen()
-        }
+        if(dScreen) DetailScreen(
+            modifier = Modifier.fillMaxSize().padding(30.dp)
+        )
     }
 }
 
